@@ -1,0 +1,49 @@
+html{
+    background-color: #2c2f33;
+}
+
+#inp{
+    border-radius: 1cm;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 2cm;
+    font-size: 20px;
+}
+
+#add{
+    border-radius: 1cm;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 2cm;
+    font-size: 20px;
+}
+
+#list{
+    border-radius: 1cm;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    height: 2cm;
+    font-size: 20px;
+}
+
+#ub1{
+    border-radius: 1cm;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    width: 70%;
+    height: 2cm;
+    font-size: 70px;
+    color:rgb(216, 216, 216);
+    text-decoration: underline;
+}
+
+#l1{
+    background-color: purple;
+}
