@@ -16,6 +16,7 @@ let shoppingItems = getShoppingItemsFromLocalStorage();
 
         function addNewItem() {
             
+
             let item = document.getElementById('inp').value;
             document.getElementById('inp').innerHTML = '';
 
@@ -23,6 +24,7 @@ let shoppingItems = getShoppingItemsFromLocalStorage();
                 shoppingItems.push(item);
                 localStorage.setItem('shoppingItems', shoppingItems);
             }
+            inp.value = '';
         }
 
         function removeItem(itemIndex) {
@@ -35,6 +37,7 @@ let shoppingItems = getShoppingItemsFromLocalStorage();
 
             for (let index = 0; index < shoppingItems.length; index += 1) {
                 document.getElementById('list').innerHTML += '<li class="l1">' + shoppingItems[index] +
-                ' <button onclick="removeItem(' + index + '); updateList();">X</button></li>';
+                ' <button id="deletebutton" onclick="removeItem(' + index + '); updateList();">X</button></li>';
+            
             }
         }
