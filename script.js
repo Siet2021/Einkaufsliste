@@ -34,7 +34,7 @@ let shoppingItems = getShoppingItemsFromLocalStorage();
             document.getElementById('list').innerHTML = '';
 
             for (let index = 0; index < shoppingItems.length; index += 1) {
-                document.getElementById('list').innerHTML += '<li onclick="removeItem(' + index + '); updateList();">' + shoppingItems[index] +
-                '</li>';
+                document.getElementById('list').innerHTML += '<li class="l1">' + shoppingItems[index] +
+                ' <button onclick="removeItem(' + index + '); updateList();">X</button></li>';
             }
         }
